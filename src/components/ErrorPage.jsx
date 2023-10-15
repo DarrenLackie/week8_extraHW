@@ -1,9 +1,17 @@
-import React from "react";
+import React from "react"
+import styled from 'styled-components'
+
+const ErrorMessage = styled.div`
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 48px
+`;
 
 const ErrorPage = () => {
     return ( 
-        <h1>404 - PAGE NOT FOUND</h1>
+        <ErrorMessage>404 - PAGE NOT FOUND</ErrorMessage>
     )
 }
 
-export default ErrorPage;
+export default ErrorPage
